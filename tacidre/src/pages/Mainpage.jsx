@@ -1,4 +1,4 @@
-import title from "../assets/imgs/title.png"
+import title from "../assets/imgs/Title.png"
 import img1 from "../assets/imgs/nene1.jpeg"
 import musica from "../assets/msc.mp3"
 import { useRef, useState, useEffect } from "react"
