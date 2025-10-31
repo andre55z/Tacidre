@@ -8,6 +8,7 @@ import img3 from "../assets/imgs/nene3.jpeg";
 import img4 from "../assets/imgs/nene4.jpeg";
 import img5 from "../assets/imgs/nene8.jpeg";
 import img7 from "../assets/imgs/nene7.jpeg";
+import Photos from "../components/Photos";
 
 export default function Mainpage(){
     
@@ -65,24 +66,27 @@ export default function Mainpage(){
             </nav>
 
             <section id="sobre" className=" mt-[50px] lg:mt-[100px]">
-                <div className="animate-fade lg:w-[900px] w-[310px] h-[750px] bg-sec rounded-[30px] flex flex-col items-center lg:p-5 p-3">
-                    <img src={img1} className="w-full h-[170px] lg:h-[390px] rounded-[20px]"/>
+                <div className="animate-fade lg:w-[900px] w-[310px] h-[750px] lg:h-[900px] bg-sec rounded-[30px] flex flex-col items-center lg:p-5 p-3">
+                    <img src={img1} className="w-full h-[170px] lg:h-[410px] rounded-[20px]"/>
                     <h2 className="mt-7 w-[90%] lg:text-[20px] text-[14px] text-center font-inter font-color-terc">
                         Nós, André e Taciane, temos uma história além do convencional. Somos um casal que se conheceu pela internet e, desde o primeiro dia de contato, tivemos certeza da paixão um pelo outro. Ja divemos sim algumas divergências por nossa história, porém nada que o nosso imparável e eterno amor pudesse passar. Somos um casal muito respeituoso e muito afetivo, além de sermos apaixonados por Supernatural kkkk. Além disso, gostammos muito de academia e comer doritos com uma coquinha gelada. Em dias ensolarados, adoramos curtir uma piscina e ouvir um MPB para esquecermos da vida lá fora. Pode ser que, em nossas vidas particulares, tenhamos um milhão de perrengues e desafios, porém nunca soltamos a mão do outro, pois é isso que nos fortalece e nos faz lembrar de que em nada na vida estamos faznedo sozinhos.
                     </h2>
                 </div>
             </section>
 
-            <Heartanim ClassName={' w-[200px]'}/>
-            <section id="moments" className=" lg:mt-10 lg:w-[500px] w-[270px] flex justify-center" >
-                <img src={imgMom} key={imgMom} className="animate-fade-left rounded-[30px]" />
+            <Heartanim ClassName={' w-[100px]'}/>
+            <section id="moments" className=" lg:mt-2 lg:w-[500px] w-[350px] h-[500px] flex justify-center" >
+                <div className="w-[270px]  p-6 bg-sec rounded-[30px]">
+                    <Photos src={imgMom} key={imgMom}/>
+                </div>
+                
             </section>
 
             <section id="verc">
                 <div className="bg-sec mt-[30px] lg:w-[800px] p-4 rounded-[30px] flex flex-col items-center m-5">
                     <h1 className="font-rowdies font-color-sec  lg:text-[30px]">Um versículo...</h1>
                     <h1 className="font-rowdies font-color-sec  lg:text-[30px]">1 Coríntios 13 4-7</h1>
-                    <h2 className="text-center font-color-terc lg:text-[30px]">"1 O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha."
+                    <h2 className="text-center font-color-terc lg:text-[20px]">"1 O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha."
                         <br/>"2 Não maltrata, não procura seus interesses, não se ira facilmente, não guarda rancor."
                         <br/>"3 O amor não se alegra com insjustiça, mas se alegra com a verdade."
                         <br/>"4 Tudo sofre, tudo crê, tudo espera, tudo suporta."
